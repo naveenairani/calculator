@@ -21,7 +21,7 @@ body {
 }
 .container {
     display: flex;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     height: auto;
     background: var(--text-clr);
@@ -143,18 +143,7 @@ button:hover {
     background: #fab005;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 80%;
-    }
-    .disnum {
-        font-size: 40px;
-    }
-    .buttons button {
-        width: 65px;
-        height: 45px;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .container {
