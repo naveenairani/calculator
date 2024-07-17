@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url(/font/digital-7.ttf) format('truetype');
+}
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    background: var(--text-clr);
+    border-radius: 16px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+header, footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+footer {
+    flex-direction: row;
+}
+
+footer img {
+    margin: 5px;
+}
+
+footer p {
+    color: #fff;
+}
+.display{
+    width: 380px;
+    height: 80px;
+    background-color: rgb(44, 51, 45);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.disnum{
+    display: flex;
+    height: 60px;
+    background-color: rgb(77, 96, 109);
+    width: 370px;
+    border-radius: 14px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 44px;
+    font-family: 'Digital-7', sans-serif;
+    color: burlywood;
+}
+
+.buttons{
+    width: 380px;
+    height: 380px;
+    background: var(--bg-num-color);
+    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 10px;
+}
+
+.buttons button{
+    width: 70px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+:root {
+    --bg-num-color: rgb(19,87,78);
+    --bg-clr: #ffd43b;
+    --text-clr: #183153;
+    --border: 3px solid var(--text-clr);
+  }
+button {
+    background: #ffd43b;
+    color: var(--text-clr);
+    padding: 20px;
+    font-size: larger;
+    border: var(--border);
+    border-radius: 20px;
+    border-bottom: 8px solid var(--text-clr);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:active {
+    border-bottom: var(--border);
+    transform: translateY(5px);
+  }
+  
+  button:hover {
+    background: #fab005;
+  }
