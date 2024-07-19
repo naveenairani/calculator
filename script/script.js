@@ -22,10 +22,10 @@ document.querySelector("#plusminus").addEventListener('click', () =>{
     }
 })
 document.querySelector("#clear").addEventListener('click', ()=>{
-    currentNum = '';
-    previousNum = '';
-    operator = '';
-    updatedisplay('')
+    if(currentNum !== ""){
+        currentNum = currentNum.slice(0,-1);
+    }
+    updatedisplay(currentNum)
 })
 
 function handleNum(value){
